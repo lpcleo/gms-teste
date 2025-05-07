@@ -4,6 +4,13 @@ describe('Funcionalidade: Busca de Filmes', () => {
     beforeEach(() => {
         cy.visit('/')
     });
+    
+    afterEach(() => {
+        cy.screenshot()
+        
+    });
+    
+    
 
     it('Deve buscar filme com sucesso', () => {
         const filme = 'Matrix';

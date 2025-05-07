@@ -2,7 +2,7 @@
 
 describe('Funcionalidade: Recomendações do Dia', () => {
   it('a', () => {
-    cy.visit('http://127.0.0.1:8080/')
+    cy.visit('/')
     cy.get('#recommendations-section')
       .should('be.visible')
       .within(() => {

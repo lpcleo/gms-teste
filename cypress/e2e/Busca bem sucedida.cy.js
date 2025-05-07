@@ -2,7 +2,7 @@
 
 describe('Funcionalidade: Busca de Filmes', () => {
   it('Deve retornar todos os filmes com o termo corretamente', () => {
-      cy.visit('http://127.0.0.1:8080/')
+      cy.visit('/')
       cy.get('#search-input').type('The Matrix')
       cy.get('#search-button').click()
       

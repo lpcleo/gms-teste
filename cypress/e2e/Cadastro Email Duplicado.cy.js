@@ -2,7 +2,7 @@
 
 describe('US-012-Funcionalidade: Cadastro de membros', () => {
   it('Deve fazer cadastro com email duplicado e retornar como erro', () => {
-    cy.visit('http://127.0.0.1:8080/')
+    cy.visit('/')
     cy.get('#signup-firstname').type('Leo')
     cy.get('#signup-lastname').type('Lopes')
     cy.get('#signup-email').type('Teste1@teste.com')
